@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.12)
+project(untitled1 C)
+enable_language(C ASM)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+set(CMAKE_C_STANDARD 11)
+
+add_executable(untitled1 binary_op.s sum_ascii.s encode.s facta.s main.c)
+add_executable(binary_op binary_op.s binaryOP.c)
+add_executable(sum_ascii sum_ascii.s sumascii.c)
+add_executable(encode encode.s encode.c)
+add_executable(test func.c m_func.s)
